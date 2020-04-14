@@ -17,7 +17,7 @@
             class="text-center"
           >
             <v-card class="elevation-12"
-             :height="320">
+             :height="350">
               <v-toolbar
                 color="primary"
                 dark
@@ -47,16 +47,23 @@
                     type="password"
                     v-model="clave"
                   />
+                   <v-select
+                    width="100"
+                    label="Seleccione un liceo"
+                    dense
+                  ></v-select>
                   <v-btn type="submit" color="primary" block>Login</v-btn>
+
                 </v-form>
+                 <!-- <v-alert :type ="alert.type">
+                 {{alert.text}}
+                </v-alert> -->
               </v-card-text>
             
             </v-card>
           </v-col>
         </v-row>
-        <!-- <pre>
-            {{$data}}
-        </pre> -->
+    
       </v-container>
     </v-content>
    
@@ -69,7 +76,9 @@ import firebase from 'firebase';
      data() {
       return{
           clave:"",
-          usuario:""
+          usuario:"",
+          // alert:{ type:"error", text:"Anonimo"}
+
       }
     },
     props: {
@@ -82,7 +91,12 @@ import firebase from 'firebase';
             .auth()
             .signInWithEmailAndPassword(this.usuario, this.clave)
             // eslint-disable-next-line no-unused-vars
-            .then((user)=> this.$router.replace('home'),
+            .then((user)=>   
+          //   this.alert.type = "success",
+          // this.alert.text = user.user.email,
+            this.$router.replace('home'),
+          
+            
             (error) => console.error(error));
             
            
