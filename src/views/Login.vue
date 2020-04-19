@@ -19,7 +19,7 @@
             <v-card class="elevation-12"
              :height="350">
               <v-toolbar
-                color="red"
+                color="primary"
                 dark
                 flat
               >
@@ -52,7 +52,7 @@
                     label=""
                     dense
                   ></v-select>
-                  <v-btn type="submit" color="red" block>LOGIN</v-btn>
+                  <v-btn type="submit" color="primary" block>LOGIN</v-btn>
 
                 </v-form>
                  <!-- <v-alert :type ="alert.type">
