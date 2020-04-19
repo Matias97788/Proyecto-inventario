@@ -1,12 +1,12 @@
 language: node_js
-
-node_js: 7
-
-before_script:
-- npm install -g firebase-tools
-
+node_js:
+  - "7"
 script:
-- firebase deploy --project sitema-inventario --token $FIREBASE_TOKEN
+ - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+ - firebase deploy --project sitema-inventario --token $FIREBASE_TOKEN
 
 
       
