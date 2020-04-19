@@ -23,7 +23,7 @@
                 dark
                 flat
               >
-                <v-toolbar-title>Inicio session </v-toolbar-title>
+                <v-toolbar-title>INICIO SESIÓN </v-toolbar-title>
                 <v-spacer />
               
               
