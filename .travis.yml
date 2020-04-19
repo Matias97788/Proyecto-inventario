@@ -1,22 +1,13 @@
-lenguage: node_js
-node_js:
-    - "9.3.0"
-branches:
-  only: 
-  - master    
 
-  
+ language: node_js
+node_js: 8
+
 before_script:
-  - npm install -g firebase-tools
+  - npm install firebase-tools -g
+  - cd functions && npm install
 
 script:
-  - npm run test
-  - npm install
-  - npm run build
-deploy:
-  provider: firebase
-  token:
-    secure: "1//0hLLHrwsOKpDGCgYIARAAGBESNwF-L9IrHHH58sz6y9Cdf8iiQD-ehWQHTjc2DoW5s52c1RjNK4yBXGfFr6vhzaFb1zZNwFrZt7s"
+  - firebase deploy --only hosting,functions --token  "1//0hLLHrwsOKpDGCgYIARAAGBESNwF-L9IrHHH58sz6y9Cdf8iiQD-ehWQHTjc2DoW5s52c1RjNK4yBXGfFr6vhzaFb1zZNwFrZt7s"
   
 
       
