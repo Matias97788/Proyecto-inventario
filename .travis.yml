@@ -2,10 +2,13 @@ lenguage: node_js
 node_js:
     - "8.13.0"
     
-install:
+before_script:
   - npm install -g firebase-tools
+
 script:
   - npm run build
-  - echo "DEPLOING"
+  - npm run test
+  
+       
 after_success:
     - firebase deploy --token $FIREBASE_TOKEN
