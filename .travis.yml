@@ -1,13 +1,16 @@
-language: node_js
-node_js: 
-  - "node"
-  script:
-    -
-deploy:
-  provider: firebase
-  token:
-    secure: "1//0hLLHrwsOKpDGCgYIARAAGBESNwF-L9IrHHH58sz6y9Cdf8iiQD-ehWQHTjc2DoW5s52c1RjNK4yBXGfFr6vhzaFb1zZNwFrZt7s"
-  
+lenguage: node_js
+node_js:
+    - "9.3.0"
+branches:
+  only: 
+  - master    
+before_script:
+  - npm install -g firebase-tools
 
-      
-    
+script:
+  - npm run build
+  - npm run test
+  
+       
+after_success:
+    - firebase deploy --token $FIREBASE_TOKEN
