@@ -49,7 +49,7 @@
                   />
                    <v-select
                     width="100"
-                    label="SELECCIONE UN LICEO"
+                    label="SELECCIONE UN ESTABLECIMIENTO"
                     dense
                   ></v-select>
                   <v-btn type="submit" color="primary" block>Login</v-btn>
