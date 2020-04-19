@@ -1,8 +1,8 @@
-lenguage: node_js
+lenguage: "node_js"
 node_js:
     - "6.13.6"
 script:
-      npm run build
+    
     - echo "Deploying"
 
 install:
