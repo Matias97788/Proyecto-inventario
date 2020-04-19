@@ -49,7 +49,7 @@
                   />
                    <v-select
                     width="100"
-                    label=""
+                    label="ESTABLECIMIENTO"
                     dense
                   ></v-select>
                   <v-btn type="submit" color="primary" block>LOGIN</v-btn>
