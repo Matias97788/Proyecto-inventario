@@ -52,7 +52,7 @@
                     label=""
                     dense
                   ></v-select>
-                  <v-btn type="submit" color="red" block>INICIAR</v-btn>
+                  <v-btn type="submit" color="primary" block>INICIAR</v-btn>
 
                 </v-form>
                  <!-- <v-alert :type ="alert.type">
