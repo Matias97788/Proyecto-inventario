@@ -49,10 +49,10 @@
                   />
                    <v-select
                     width="100"
-                    label="SELECCIONE UN ESTABLECIMIENTO O LICEO"
+                    label=""
                     dense
                   ></v-select>
-                  <v-btn type="submit" color="red" block>LOGIN</v-btn>
+                  <v-btn type="submit" color="red" block>INICIAR</v-btn>
 
                 </v-form>
                  <!-- <v-alert :type ="alert.type">
