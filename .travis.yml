@@ -1,18 +1,12 @@
-lenguage: node_js
-node_js:
-    - "9.3.0"
-branches:
-  only: 
-  - master    
+language: node_js
+
+node_js: 7
+
 before_script:
-  - npm install -g firebase-tools
+- npm install -g firebase-tools
 
 script:
-  - npm run build
-  - npm run test
-       
-after_success:
-    - firebase deploy --token $FIREBASE_TOKEN
+- firebase deploy --project sitema-inventario --token $FIREBASE_TOKEN
 
 
       
