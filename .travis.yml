@@ -1,6 +1,6 @@
 lenguage: node_js
 node_js:
-    - "9.3.0"
+    - "8.13.0"
     
 install:
   - npm install -g firebase-tools
