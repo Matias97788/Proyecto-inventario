@@ -16,7 +16,7 @@ script:
 deploy:
   provider: firebase
   token:
-    secure: $FIREBASE_TOKEN
+    secure: "1//0hZ8dZe7Fx7QACgYIARAAGBESNwF-L9IrwN9YKOqrH_2ZbWgnsViOJr8l5bXZepoHEnU9QaJt4KrefiMshbE4r4fNYvP_hc3cm_I"
     project: "sitema-inventario"
 
       
