@@ -19,7 +19,7 @@
                 
                 <div>
                   <div v-for="w in usuarios" :key="w.key">
-                    <h2> Bienvenidoa:</h2>
+                    <h2> Bienvenidoas:</h2>
                       <h3>{{ w.name}} {{ w.apellidoM}} {{ w.apellidoP}}   </h3>
                   </div>
                   
